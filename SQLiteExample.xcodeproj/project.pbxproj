@@ -14,6 +14,9 @@
 		84A655771A95D76F00DF3CD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A655761A95D76F00DF3CD4 /* Images.xcassets */; };
 		84A6557A1A95D76F00DF3CD4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A655781A95D76F00DF3CD4 /* LaunchScreen.xib */; };
 		84A655861A95D76F00DF3CD4 /* SQLiteExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A655851A95D76F00DF3CD4 /* SQLiteExampleTests.m */; };
+		84A655901A95D77A00DF3CD4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6558F1A95D77A00DF3CD4 /* libsqlite3.0.dylib */; };
+		84A655931A95D7E100DF3CD4 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A655921A95D7E100DF3CD4 /* Author.m */; };
+		84B3F7C91A96AE7A00CF3904 /* AuthorsDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 84B3F7C81A96AE7A00CF3904 /* AuthorsDB.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		84A6557F1A95D76F00DF3CD4 /* SQLiteExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A655841A95D76F00DF3CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A655851A95D76F00DF3CD4 /* SQLiteExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteExampleTests.m; sourceTree = "<group>"; };
+		84A6558F1A95D77A00DF3CD4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		84A655911A95D7E100DF3CD4 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		84A655921A95D7E100DF3CD4 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		84B3F7C81A96AE7A00CF3904 /* AuthorsDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = AuthorsDB.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A655901A95D77A00DF3CD4 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 		84A6555D1A95D76F00DF3CD4 = {
 			isa = PBXGroup;
 			children = (
+				84A6558F1A95D77A00DF3CD4 /* libsqlite3.0.dylib */,
 				84A655681A95D76F00DF3CD4 /* SQLiteExample */,
 				84A655821A95D76F00DF3CD4 /* SQLiteExampleTests */,
 				84A655671A95D76F00DF3CD4 /* Products */,
@@ -81,6 +90,7 @@
 		84A655681A95D76F00DF3CD4 /* SQLiteExample */ = {
 			isa = PBXGroup;
 			children = (
+				84B3F7C81A96AE7A00CF3904 /* AuthorsDB.sqlite */,
 				84A6556D1A95D76F00DF3CD4 /* AppDelegate.h */,
 				84A6556E1A95D76F00DF3CD4 /* AppDelegate.m */,
 				84A655701A95D76F00DF3CD4 /* ViewController.h */,
@@ -89,6 +99,8 @@
 				84A655761A95D76F00DF3CD4 /* Images.xcassets */,
 				84A655781A95D76F00DF3CD4 /* LaunchScreen.xib */,
 				84A655691A95D76F00DF3CD4 /* Supporting Files */,
+				84A655911A95D7E100DF3CD4 /* Author.h */,
+				84A655921A95D7E100DF3CD4 /* Author.m */,
 			);
 			path = SQLiteExample;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B3F7C91A96AE7A00CF3904 /* AuthorsDB.sqlite in Resources */,
 				84A655751A95D76F00DF3CD4 /* Main.storyboard in Resources */,
 				84A6557A1A95D76F00DF3CD4 /* LaunchScreen.xib in Resources */,
 				84A655771A95D76F00DF3CD4 /* Images.xcassets in Resources */,
@@ -221,6 +234,7 @@
 			files = (
 				84A655721A95D76F00DF3CD4 /* ViewController.m in Sources */,
 				84A6556F1A95D76F00DF3CD4 /* AppDelegate.m in Sources */,
+				84A655931A95D7E100DF3CD4 /* Author.m in Sources */,
 				84A6556C1A95D76F00DF3CD4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLiteExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQLiteExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +428,7 @@
 				84A6558B1A95D76F00DF3CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6558C1A95D76F00DF3CD4 /* Build configuration list for PBXNativeTarget "SQLiteExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				84A6558E1A95D76F00DF3CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
